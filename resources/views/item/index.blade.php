@@ -11,14 +11,12 @@
                 </div>
             </div>
             <div class="row" style="margin-top: 30px;">
-                <table class="table table-striped">
+                <table class="table table-striped table-dark">
                     <thead>
                         <tr>
                             <th scope="col">Item</th>
                             <th scope="col">Jumlah</th>
-                            <th scope="col">Company</th>
                             <th scope="col">Gudang</th>
-                            <th scope="col">Updated At</th>
                             <th scope="col">Created At</th>
                             <th scope="col">Action</th>
                         </tr>
@@ -26,11 +24,9 @@
                     <tbody>
                         @foreach ($items as $item)
                             <tr>
-                                <td><a href="{{route('item.edit', $item)}}">{{$item->item}}</td>
+                                <td><a href="{{route('item.edit', $item)}}" class="text-white">{{$item->item}}</td>
                                 <td>{{$item->jumlah}}</td>
-                                <td>{{$item->company_item}}</td>
                                 <td>{{$item->stored->warehouse}}</td>
-                                <td>{{$item->updated_at}}</td>
                                 <td>{{$item->created_at}}</td>
                                 <td>
                                     <form action="{{route('item.destroy', $item)}}" method="post">

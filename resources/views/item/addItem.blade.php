@@ -17,10 +17,6 @@
                         <input type="text" class="form-control" id="jumlah" name="jumlah">
                     </div>
                     <div class="form-group">
-                        <label for="tanggal">Company:</label>
-                        <input type="text" class="form-control" id="company_item" name="company_item">
-                    </div>
-                    <div class="form-group">
                         <label for="warehouse">Gudang:</label>
                         <select name = "stored_in" class = "custom-select">
                             @foreach ($warehouses as $warehouse)

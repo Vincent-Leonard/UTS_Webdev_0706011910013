@@ -9,14 +9,14 @@
 
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <div id="app" class="p-3 mb-2 bg-dark text-white">
+        <nav class="navbar navbar-expand-md navbar-light bg-secondary shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/warehouse') }}">
+                <a class="navbar-brand text-white" href="{{ url('/warehouse') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
-                <a class="nav-link" href="/warehouse">Warehouse List</a>
-                <a class="nav-link" href="/item">Item List</a>
+                <a class="nav-link text-white" href="/warehouse">Warehouse List</a>
+                <a class="nav-link text-white" href="/item">Item List</a>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
@@ -26,6 +26,7 @@
                 </div>
             </div>
         </nav>
+
         @yield('content')
 
 <!-- Footer -->

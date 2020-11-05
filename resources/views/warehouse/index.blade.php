@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="row" style="margin-top: 30px;">
-                <table class="table table-striped">
+                <table class="table table-striped table-dark">
                     <thead>
                         <tr>
                             <th scope="col">Gudang</th>
@@ -19,7 +19,6 @@
                             <th scope="col">Perusahaan</th>
                             <th scope="col">Luas</th>
                             <th scope="col">Sedang Menyimpan</th>
-                            <th scope="col">Updated At</th>
                             <th scope="col">Created At</th>
                             <th scope="col">Action</th>
                         </tr>
@@ -27,7 +26,7 @@
                     <tbody>
                         @foreach ($warehouses as $warehouse)
                             <tr>
-                                <td><a href="{{route('warehouse.edit', $warehouse)}}">{{$warehouse->warehouse}}</td>
+                                <td><a href="{{route('warehouse.edit', $warehouse)}}" class="text-white">{{$warehouse->warehouse}}</td>
                                 <td>{{$warehouse->location}}</td>
                                 <td>{{$warehouse->company}}</td>
                                 <td>{{$warehouse->area}}</td>
@@ -36,7 +35,6 @@
                                         <li>{{$item->item}}</li>
                                     @endforeach
                                 </td>
-                                <td>{{$warehouse->updated_at}}</td>
                                 <td>{{$warehouse->created_at}}</td>
                                 <td>
                                     <form action="{{route('warehouse.destroy', $warehouse)}}" method="post"

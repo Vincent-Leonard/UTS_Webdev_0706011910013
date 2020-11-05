@@ -18,10 +18,6 @@
                         <input type="text" class="form-control" id="jumlah" name="jumlah" value="{{$item->jumlah}}">
                     </div>
                     <div class="form-group">
-                        <label for="nama">Company:</label>
-                        <input type="text" class="form-control" id="company_item" name="company_item" value="{{$item->company_item}}">
-                    </div>
-                    <div class="form-group">
                         <label for="user">Gudang:</label>
                         <select name = "stored_in" class = "custom-select">
                             @foreach($warehouses as $warehouse)
