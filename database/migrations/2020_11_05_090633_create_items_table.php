@@ -17,7 +17,6 @@ class CreateItemsTable extends Migration
             $table->id();
             $table->string('item');
             $table->string('jumlah');
-            $table->string('company_item');
             $table->timestamps();
         });
     }

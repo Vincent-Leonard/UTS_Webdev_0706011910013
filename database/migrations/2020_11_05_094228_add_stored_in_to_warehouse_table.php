@@ -15,7 +15,7 @@ class AddStoredInToWarehouseTable extends Migration
     {
         Schema::table('items', function (Blueprint $table) {
             //
-            $table->unsignedBigInteger('stored_in')->index()->after('company_item')->nullable();
+            $table->unsignedBigInteger('stored_in')->index()->after('jumlah')->nullable();
 
             $table->foreign('stored_in')->references('id')->on('warehouses')
             ->onDelete('cascade');
