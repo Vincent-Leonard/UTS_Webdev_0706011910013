@@ -29,6 +29,7 @@
                             ?>
                                 <option value="{{$warehouse->id}}" {{ $selected }}>{{$warehouse->warehouse.'('. $warehouse->location .')'}}</option>
                             @endforeach
+                        </select>
                     </div>
                    
                     <br>
